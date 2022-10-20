@@ -67,7 +67,7 @@
 .form-group:focus-within {
    transform: scale(1.05,1.05);
 }
-.signup-btn>button {
+.signup-btn>input {
    width: 250px;
    padding: 10px;
    margin-bottom: 5px;
@@ -76,7 +76,7 @@
    border: none;
    transition: all 0.5s ease-in-out;
 }
-.signup-btn>button:hover{
+.signup-btn>input:hover{
    background-color: #1bab6e;
    border-color: none;
    cursor: pointer;

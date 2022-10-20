@@ -16,7 +16,7 @@ function Login() {
 
         <div className="login-form-group">
           <h2>Login</h2>
-
+        <form  onSubmit={loginHandler} >
           <div className="form-group">
             <input type="email" className='form-control' name='email *' placeholder="Email" autoFocus required
             value={email} onChange={(e)=> setEmail(e.target.value)}
@@ -32,10 +32,10 @@ function Login() {
           </div>
   
           <div  className="login-btn">
-            <button type='submit' onClick={loginHandler}>Login</button>
+            <button type='submit' value='Login'/>
             <p> Don't have an account ? <Link to="/Signup">Signup</Link></p> 
           </div>
-
+        </form>
         </div>
 
       </div>

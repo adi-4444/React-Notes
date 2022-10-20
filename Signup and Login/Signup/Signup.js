@@ -18,7 +18,7 @@ function Signup() {
 
         <div className="signup-form-group">
           <h2>Signup</h2>
-
+          <form  onSubmit={signupHandler}>
             <div className="form-group">
               <input type="text" className='form-control' name='name' placeholder="Name" autoFocus required
               value={name} onChange={(e)=> setName(e.target.value)}/>
@@ -51,10 +51,10 @@ function Signup() {
             </div>
 
           <div  className="signup-btn">
-            <button type='submit' onSubmit={signupHandler}>Signup</button>
+            <input type='submit' value='Signup'/>
             <p>Already have an account ? <Link to="/">Login</Link></p>
           </div>
-
+        </form>
         </div>
 
       </div>
